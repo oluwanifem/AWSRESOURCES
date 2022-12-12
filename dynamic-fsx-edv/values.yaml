@@ -1,0 +1,9 @@
+claim:
+  labels:
+    "dominodatalab.com/external-data-volume": "Generic"
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 1.2Ti
+  storageClassName: "fsx-sc"

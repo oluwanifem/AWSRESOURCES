@@ -1,0 +1,7 @@
+metadata:
+  name: fsx-sc
+provisioner: fsx.csi.aws.com
+mountOptions: {}
+parameters:
+  subnetId: subnet-0ec60da9bb2007fa7
+  securityGroupIds: sg-00c07ee4f3b380ae5

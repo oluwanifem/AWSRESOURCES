@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: {{ quote .Release.Name }}
+  namespace: domino-compute
+  labels:
+    {{- toYaml .Values.claim.labels | nindent 4 }}
+spec:
+  accessModes:
+  {{- range .Values.claim.accessModes }}
+    - {{ quote . }}
+  {{- end }}
+  storageClassName: {{ quote .Values.claim.storageClassName }}
+  resources: {{- toYaml .Values.claim.resources | nindent 4 }}

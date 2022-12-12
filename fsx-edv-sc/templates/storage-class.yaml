@@ -1,0 +1,11 @@
+kind: StorageClass
+apiVersion: storage.k8s.io/v1
+metadata:
+  {{- toYaml .Values.metadata | nindent 2 }}
+provisioner: {{ quote .Values.provisioner }}
+mountOptions:
+  {{- range .Values.mountOptions }}
+  - {{ quote . }}
+  {{- end }}
+parameters:
+  {{- toYaml .Values.parameters | nindent 2 }}
