@@ -3,5 +3,5 @@ metadata:
 provisioner: fsx.csi.aws.com
 mountOptions: {}
 parameters:
-  subnetId: subnet-0ec60da9bb2007fa7
-  securityGroupIds: sg-00c07ee4f3b380ae5
+  subnetId: subnet-0e28efaf136b6c125
+  securityGroupIds: sg-004400ec225e35b21

@@ -5,5 +5,5 @@ claim:
     - ReadWriteMany
   resources:
     requests:
-      storage: 1.2Ti
+      storage: 18Ti
   storageClassName: "fsx-sc"
